@@ -1,0 +1,15 @@
+
+version: "3.8"
+
+services:
+  app:
+    image: test5
+    container_name: test5
+    network_mode: test
+    build: .
+    #volumes:
+
+    restart: always
+    ports:
+      - 4556:80
+   
