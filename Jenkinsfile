@@ -27,7 +27,7 @@ pipeline {
          stage('Deploying Application'){
       
           steps{
-                  sh "/var/lib/jenkins/workspace/docker.sh"
+                  sh "/var/lib/jenkins/workspace/newdocker.sh"
                }
                 post {
                 always {
