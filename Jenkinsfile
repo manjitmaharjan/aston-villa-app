@@ -25,15 +25,15 @@ pipeline {
                }
                 post {
                 always {
-                    echo "always forever"
+                     cleanWs()
                   }
-                success {
+             //   success {
                     // we only worry about archiving the jar file if the build steps are successful
-                    archiveArtifacts(artifacts: 'target/*.war', allowEmptyArchive: true)
-                }
-              failure {
-                  echo "failed"
-               }
+               //     archiveArtifacts(artifacts: 'target/*.war', allowEmptyArchive: true)
+             //   }
+            //  failure {
+              //    echo "failed"
+              // }
            }
         }
 
