@@ -3,12 +3,6 @@ pipeline {
     
      stages {
           
-        stage('Git clone'){
-      
-          steps{
-              checkout([$class: 'GitSCM', branches: [[name: '*/J2EE']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],    userRemoteConfigs: [[credentialsId: 'dd6df3a6-4b85-45f4-ae53-dcbcc29a0f56', url: 'https://github.com/manjitmaharjan/onlinebookstore.git']]])
-               }
-            }
 
         stage('sonarqube'){
 
